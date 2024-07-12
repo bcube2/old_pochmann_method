@@ -8,7 +8,7 @@ popping up while rotating a cube.
 var kbInp, kbInt, kbMax, kbCount;
 var kbInput = document.getElementsByTagName('input');
 function kb(n, i, m) {
-  kbInp = n;
+  kbInp = n + 1;
   kbInt = i;
   kbMax = m;
   kbCount = 0;
