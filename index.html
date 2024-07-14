@@ -1,433 +1,747 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
  <script src="https://cjrtnc.leaningtech.com/2.3/loader.js"></script>
  <script>cheerpjInit({enablePreciseAppletArchives:true});</script>
  <script src=kb.js></script>
- <script>kb(19, 100, 1200)</script>
+ <script>kb(29, 100, 1200)</script>
  <script src=rtwr.js></script>
- <script>rt(19,500,120)</script>
+ <script>rt(29,500,120)</script>
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
-<title>The Easiest Method for Beginners</title>
+<title>Stefan Pochmann's Blindsolving</title>
 </head>
-<body>
-<table style="text-align: left; width: 100%;" border="0" cellpadding="4" cellspacing="8">
-  <tbody>
-    <tr style="font-weight: bold;">
-      <td style="vertical-align: top; background-color: rgb(204, 204, 204);"><big><big><big>The
-Easiest<small><small><sup style="font-weight: normal;">(*)</sup></small></small>
-Method for Beginners<br>
-      <small><small><small><small><small><sup style="font-weight: normal;">(*)</sup><span style="font-weight: normal;"> Or maybe the worst...</span></small></small></small></small></small><br>
-      </big></big></big></td>
-    </tr>
+  <body bgcolor="#000000" text="#FFCC66" link="#FF9900" vlink="#DD7700">
+
+ 
+
+<!-- ============================================================ -->
+<!--                                                              -->
+<!--      Header                                                  -->
+<!--                                                              -->
+<!-- ============================================================ -->
+
+<center>
+  <table width="100%" border="0">
     <tr>
-      <td style="vertical-align: top; background-color: rgb(240, 240, 240);"><br>
-It's
-perfectly possible to solve a Rubik's Cube using common intuition and
-simple rules.<br>
-Usually, people can solve one layer by themselves. If you can do it,
-you
-(almost) can solve the whole cube.<br>
-      <br>
-No mysterious magical sequences required. If you understand how it
-works, you'll remember it forever.<br>
-No need to learn any notation, the animated cubes will show you the
-basic moves you need.<br>
-No mathematical formulae (group theory principles explained <a href="https://web.archive.org/web/20041208083322/http://www.geocities.com/jaapsch/puzzles/">here</a>), I'll try
-to make it intuitive.<br>
-      <br>
-This page is not about efficient solving.<br>
-      <br>
-If you think this page is not very helpful, you should take a look at <a href="https://web.archive.org/web/20041208083322/http://www.geocities.com/jasmine_ellen/RubiksCubeSolution.html">Jasmine's
-beginner page</a> where a more conventional approach is proposed.<br>
-      <br>
+      <td align="left" rowspan="2">
+        <img src="middle.jpg"/>
+      </td>
+      <td align="middle">
+        <p align="center">
+	  <a href="https://www.stefan-pochmann.info/">Home</a> -	  <a href="https://www.stefan-pochmann.info/spocc/">Cube Corner</a> -	  <a href="https://www.stefan-pochmann.info/spocc/blindsolving/">Blindsolving</a>	</p>
+      </td>
+      <td align="right" rowspan="2">
+        <img src="solved.jpg"/>
       </td>
     </tr>
     <tr>
-      <td style="vertical-align: top; background-color: rgb(204, 204, 204);"><big><big><span style="font-weight: bold;">Solving the first layer</span></big></big></td>
+      <td align="middle">
+        <font size="+3" color="#CC6600">Blindsolving the 3x3</font><br/>
+              </td>
     </tr>
-    <tr>
-      <td style="vertical-align: top; background-color: rgb(240, 240, 240);"><br>
-It
-seems that everybody can do it using common intuition. It can take some
-time if it's your first try.<br>
-You cube should now look like this:<br>
-      <div style="text-align: center;"><br>
-      <applet code="ch.randelshofer.rubik.RubikPlayerApp.class" archive="rubikplayer.zip" height="200" width="200"> <param name="beta" value="30"> <param name="backgroundColor" value="0xFFFFFF"> <param name="displayLines" value="0"> <param name="colorTable" value="0x003373,0xff4600,0xf8f8f8,0x00732f,0x8c000f, 0xffd200,0x707070">
-      <param name="stickers" value="0,0,0,6,6,6,6,6,6,1,1,1,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,3,3,3,6,6,6,6,6,6,4,4,4,6,6,6,6,6,6,5,5,5,5,5,5,5,5,5"></applet>
-      <br>
-      <br>
-      </div>
-      </td>
-    </tr>
-    <tr>
-      <td style="vertical-align: top; background-color: rgb(204, 204, 204);"><big><big style="font-weight: bold;">Manipulating the first layer</big></big></td>
-    </tr>
-    <tr>
-      <td style="vertical-align: top; background-color: rgb(240, 240, 240);"><br>
-You
-just built a layer starting from a random state. So, you should not
-have
-any problem making transformations of this layer.<br>
-Look at the following basic moves. You can do them differently, it
-doesn't matter.<br>
-      <br>
-      <table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
-        <tbody>
-          <tr>
-            <td style="height: 50%; width: 50%; text-align: center; vertical-align: middle;"><applet code="ch.randelshofer.rubik.RubikPlayerApp.class" archive="/web/20041208083322oe_/http://grrroux.free.fr/begin/rubikplayer.zip" height="200" width="200"> <param name="beta" value="30"> <param name="backgroundColor" value="0xFFFFFF"> <param name="displayLines" value="0"> <param name="colorTable" value="0x003373,0xff4600,0xf8f8f8,0x00732f,0x8c000f, 0xffd200,0x707070"><param name="stickers" value="0,0,0,6,6,6,6,6,6,1,1,1,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,3,3,3,6,6,6,6,6,6,4,4,4,6,6,6,6,6,6,5,5,5,5,5,5,5,5,5"><param name="scriptLanguage" value="HarrisENG"> <param name="scriptType" value="Solver"> <param name="script" value="R'DRFDF'"></applet><br>
-Rotate a corner<br>
-            </td>
-            <td style="height: 50%; width: 50%; text-align: center; vertical-align: middle;"><applet code="ch.randelshofer.rubik.RubikPlayerApp.class" archive="/web/20041208083322oe_/http://grrroux.free.fr/begin/rubikplayer.zip" height="200" width="200"> <param name="beta" value="30"> <param name="backgroundColor" value="0xFFFFFF"> <param name="displayLines" value="0"> <param name="colorTable" value="0x003373,0xff4600,0xf8f8f8,0x00732f,0x8c000f, 0xffd200,0x707070"><param name="stickers" value="0,0,0,6,6,6,6,6,6,1,1,1,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,3,3,3,6,6,6,6,6,6,4,4,4,6,6,6,6,6,6,5,5,5,5,5,5,5,5,5"><param name="scriptLanguage" value="HarrisENG"> <param name="scriptType" value="Solver"> <param name="script" value="FEF2E2F"></applet><br>
-Rotate an edge</td>
-          </tr>
-          <tr>
-            <td style="height: 50%; width: 50%; text-align: center; vertical-align: middle;"><applet code="ch.randelshofer.rubik.RubikPlayerApp.class" archive="/web/20041208083322oe_/http://grrroux.free.fr/begin/rubikplayer.zip" height="200" width="200"> <param name="beta" value="30"> <param name="backgroundColor" value="0xFFFFFF"> <param name="displayLines" value="0"> <param name="colorTable" value="0x003373,0xff4600,0xf8f8f8,0x00732f,0x8c000f, 0xffd200,0x707070"><param name="stickers" value="0,0,0,6,6,6,6,6,6,1,1,1,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,3,3,3,6,6,6,6,6,6,4,4,4,6,6,6,6,6,6,5,5,5,5,5,5,5,5,5"><param name="scriptLanguage" value="HarrisENG"> <param name="scriptType" value="Solver"> <param name="script" value="LU'RD2R'UL'"></applet><br>
-Swap two corners</td>
-            <td style="height: 50%; width: 50%; text-align: center; vertical-align: middle;"><applet code="ch.randelshofer.rubik.RubikPlayerApp.class" archive="/web/20041208083322oe_/http://grrroux.free.fr/begin/rubikplayer.zip" height="200" width="200"> <param name="beta" value="30"> <param name="backgroundColor" value="0xFFFFFF"> <param name="displayLines" value="0"> <param name="colorTable" value="0x003373,0xff4600,0xf8f8f8,0x00732f,0x8c000f, 0xffd200,0x707070"><param name="stickers" value="0,0,0,6,6,6,6,6,6,1,1,1,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,3,3,3,6,6,6,6,6,6,4,4,4,6,6,6,6,6,6,5,5,5,5,5,5,5,5,5"><param name="scriptLanguage" value="HarrisENG"> <param name="scriptType" value="Solver"> <param name="script" value="MSDS'D2'M'"></applet><br>
-Swap two edges</td>
-          </tr>
-        </tbody>
-      </table>
-      <br>
-Do you have problems understanding them? Don't go to the next section
-before you can master these easy moves (or the ones you found) allowing
-you to change pieces of the first layer easily.<br>
-      <br>
-      </td>
-    </tr>
-    <tr>
-      <td style="vertical-align: top; background-color: rgb(204, 204, 204);"><big><big><span style="font-weight: bold;">Rearranging the first layer without
-disturbing the others</span></big></big></td>
-    </tr>
-    <tr>
-      <td style="vertical-align: top; background-color: rgb(240, 240, 240);"><br>
-Once
-a first layer is solved, freedom of movement is reduced, and people
-can't
-see what they can do without destroying it. You have to find a way of
-moving only selected cubies, preserving the
-state of others (local transformation).<br>
-      <br>
-Take the first basic move that rotates a corner for example. What's
-the problem with it? It destroys the two lower layers of course. Do it
-backwards, the cube is restored.<br>
-      <br>
-      <table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
-        <tbody>
-          <tr>
-            <td style="height: 50%; width: 50%; text-align: center; vertical-align: middle;"><applet code="ch.randelshofer.rubik.RubikPlayerApp.class" archive="/web/20041208083322oe_/http://grrroux.free.fr/begin/rubikplayer.zip" height="200" width="200"> <param name="beta" value="30"> <param name="backgroundColor" value="0xFFFFFF"> <param name="displayLines" value="0"> <param name="scriptLanguage" value="HarrisENG"> <param name="scriptProgress" value="0"> <param name="script" value="R'DRFDF'"></applet><br>
-Doing a move</td>
-            <td style="height: 50%; width: 50%; text-align: center; vertical-align: middle;"><applet code="ch.randelshofer.rubik.RubikPlayerApp.class" archive="/web/20041208083322oe_/http://grrroux.free.fr/begin/rubikplayer.zip" height="200" width="200"> <param name="beta" value="30"> <param name="backgroundColor" value="0xFFFFFF"> <param name="displayLines" value="0"> <param name="scriptLanguage" value="HarrisENG"> <param name="scriptType" value="Solver"> <param name="script" value="(R'DRFDF')'"></applet><br>
-Undoing a move</td>
-          </tr>
-        </tbody>
-      </table>
-      <br>
-But what happened at the end of the move? Think of it this way:<br>
-- Pieces of the first layer have been rearranged.<br>
-- Pieces of the two lower layers have been rearranged.<br>
-- Pieces of the first layer and pieces of the two lower layers are
-still separated.<br>
-- Undoing the move will independently restore the state of the first
-layer and the state of the two lower layers.<br>
-      <br>
-And now, the cornerstone of this method. Try this:<br>
-      <span style="font-weight: bold;">- Do a move that rearranges
-pieces of the first layer. Call it X.</span><br style="font-weight: bold;">
-      <span style="font-weight: bold;">- Move the first layer. Call it
-Y.</span><br style="font-weight: bold;">
-      <span style="font-weight: bold;">- Undo X. Call it X'.</span><br style="font-weight: bold;">
-      <span style="font-weight: bold;">- Undo Y (</span><span style="font-weight: bold;"><span style="font-weight: bold;">only a
-matter of&nbsp; readjusting the first layer)</span></span><span style="font-weight: bold;">. Call it Y'.</span><br>
-      <br>
-Since the two lower layers and their chaos have not been changed by Y,
-X' can still restore them to their original state!<br>
-But the first layer has moved, it won't be restored with X'. The
-backward transformation will be applied to a different part of it.<br>
-      <br>
-We have reached our goal: Making (local) transformations in a layer,
-without disturbing the others.<br>
-      <br>
-      <table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
-        <tbody>
-          <tr>
-            <td style="vertical-align: middle;"><span style="text-decoration: underline;">Example</span>:<br>
-- X is a clockwise corner rotation move.<br>
-- Y is a clockwise turn of the first layer.<br>
-- X' is a counter-clockwise corner rotation move.<br>
-- Y' is a counter-clockwise turn.<br>
-Result: Two corners in the first layer have been rotated (different
-directions).</td>
-            <td style="vertical-align: middle; text-align: center;"><applet code="ch.randelshofer.rubik.RubikPlayerApp.class" archive="/web/20041208083322oe_/http://grrroux.free.fr/begin/rubikplayer.zip" height="200" width="200"> <param name="beta" value="30"> <param name="backgroundColor" value="0xFFFFFF"> <param name="displayLines" value="0"> <param name="scriptLanguage" value="HarrisENG"> <param name="scriptProgress" value="0"> <param name="script" value="(R'DRFDF')U(R'DRFDF')'U'"></applet><br>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <br>
-Thanks to the four basic moves, we can build four interesting local
-transformations of the first layer.<br>
-      <br>
-      <table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="4">
-        <tbody>
-          <tr>
-            <td style="vertical-align: middle; background-color: rgb(255, 255, 255);"><span style="font-weight: bold;">Basic move (X)</span><br>
-            </td>
-            <td style="background-color: rgb(255, 255, 255); vertical-align: middle;"><span style="font-weight: bold;">Result of the commutator (X.Y.X'.Y')</span><br>
-            </td>
-            <td style="background-color: rgb(255, 255, 255); vertical-align: middle; text-align: center;"><span style="font-weight: bold;">Example</span><br>
-            </td>
-          </tr>
-          <tr>
-            <td style="background-color: rgb(255, 255, 255); vertical-align: middle;">Rotate
-a corner</td>
-            <td style="background-color: rgb(255, 255, 255); vertical-align: middle;">Rotate
-two corners</td>
-            <td style="background-color: rgb(255, 255, 255); vertical-align: middle; text-align: center;"><applet code="ch.randelshofer.rubik.RubikPlayerApp.class" archive="/web/20041208083322oe_/http://grrroux.free.fr/begin/rubikplayer.zip" height="150" width="150"> <param name="beta" value="30"> <param name="backgroundColor" value="0xFFFFFF"> <param name="displayLines" value="0"> <param name="scriptLanguage" value="HarrisENG"> <param name="scriptType" value="Solver"> <param name="script" value="(R'DRFDF')U(R'DRFDF')'U'"></applet><br>
-            </td>
-          </tr>
-          <tr>
-            <td style="background-color: rgb(255, 255, 255); vertical-align: middle;">Rotate
-an edge</td>
-            <td style="background-color: rgb(255, 255, 255); vertical-align: middle;">Rotate
-two edges</td>
-            <td style="background-color: rgb(255, 255, 255); vertical-align: middle; text-align: center;"><applet code="ch.randelshofer.rubik.RubikPlayerApp.class" archive="/web/20041208083322oe_/http://grrroux.free.fr/begin/rubikplayer.zip" height="150" width="150"> <param name="beta" value="30"> <param name="backgroundColor" value="0xFFFFFF"> <param name="displayLines" value="0"> <param name="scriptLanguage" value="HarrisENG"> <param name="scriptType" value="Solver"> <param name="script" value="(FEF2E2F)U(FEF2E2F)'U'"></applet><br>
-            </td>
-          </tr>
-          <tr>
-            <td style="background-color: rgb(255, 255, 255); vertical-align: middle;">Swap
-two corners</td>
-            <td style="background-color: rgb(255, 255, 255); vertical-align: middle;">Swap
-three corners</td>
-            <td style="background-color: rgb(255, 255, 255); vertical-align: middle; text-align: center;"><applet code="ch.randelshofer.rubik.RubikPlayerApp.class" archive="/web/20041208083322oe_/http://grrroux.free.fr/begin/rubikplayer.zip" height="150" width="150"> <param name="beta" value="30"> <param name="backgroundColor" value="0xFFFFFF"> <param name="displayLines" value="0"> <param name="scriptLanguage" value="HarrisENG"> <param name="scriptType" value="Solver"> <param name="script" value="(LU'RD2R'UL')U(LU'RD2R'UL')'U'"></applet><br>
-            </td>
-          </tr>
-          <tr>
-            <td style="background-color: rgb(255, 255, 255); vertical-align: middle;">Swap
-two edges</td>
-            <td style="background-color: rgb(255, 255, 255); vertical-align: middle;">Swap
-three edges</td>
-            <td style="background-color: rgb(255, 255, 255); vertical-align: middle; text-align: center;"><applet code="ch.randelshofer.rubik.RubikPlayerApp.class" archive="/web/20041208083322oe_/http://grrroux.free.fr/begin/rubikplayer.zip" height="150" width="150"> <param name="beta" value="30"> <param name="backgroundColor" value="0xFFFFFF"> <param name="displayLines" value="0"> <param name="scriptLanguage" value="HarrisENG"> <param name="scriptType" value="Solver"> <param name="script" value="(MSDS'D2M')U(MSDS'D2M')'U'"></applet><br>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <br>
-      </td>
-    </tr>
-    <tr>
-      <td style="vertical-align: top; background-color: rgb(204, 204, 204);"><big><big><span style="font-weight: bold;">Changing pieces belonging to different
-layers</span></big></big></td>
-    </tr>
-    <tr>
-      <td style="vertical-align: top; background-color: rgb(240, 240, 240);"><br>
-The
-pieces on which a local transformation must be applied do not
-always belong to the same layer. You'll have to bring them to a same
-layer first with a positioning move:<br>
-- Make interesting pieces belong to the first layer. Call it P.<br>
-- X.Y.X'.Y'.<br>
-- Undo the positioning move. Call it P'.<br>
-      <br>
-      <table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
-        <tbody>
-          <tr>
-            <td style="vertical-align: middle;"><span style="text-decoration: underline;">Example</span>: Permutation of
-three
-edges.<br>
-- Move the front side and then the right side to bring edges to
-up-front and up-right (P).<br>
-- Apply the three-edge swapping technique (based on X.Y.X'.Y').<br>
-- Move the right side and then the front side back to their original
-positions (P').</td>
-            <td style="vertical-align: middle; text-align: center;"><applet code="ch.randelshofer.rubik.RubikPlayerApp.class" archive="/web/20041208083322oe_/http://grrroux.free.fr/begin/rubikplayer.zip" height="200" width="200"> <param name="beta" value="30"> <param name="backgroundColor" value="0xFFFFFF"> <param name="displayLines" value="0"> <param name="scriptLanguage" value="HarrisENG"> <param name="scriptType" value="Solver"> <param name="script" value="(F2R')(MSDS'D2'M')U(MSDS'D2'M')'U'(F2R')'"></applet><br>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <br>
-That's all you need to solve the 3x3x3 cube.<br>
-      <br>
-      </td>
-    </tr>
-    <tr>
-      <td style="vertical-align: top; background-color: rgb(204, 204, 204);"><big><big><span style="font-weight: bold;">Solving example on a random cube</span></big></big><br>
-      </td>
-    </tr>
-    <tr>
-      <td style="vertical-align: top; background-color: rgb(240, 240, 240);">
-      <table style="width: 100%; text-align: left;" border="0" cellpadding="2" cellspacing="2">
-        <tbody>
-          <tr>
-            <td style="vertical-align: middle;">Let's solve a cube
-completely.<br>
-I don't detail how the first layer is built, you can do it, even if it
-takes more moves.<br>
-            <br>
-One by one, the edges of the second layer are positioned, using
-exclusively sequences that swap three edges. Red-green edge is easy,
-because in the same layer, you can find its destination and another
-free edge position.
-Same thing for red-blue and green-orange. It's more difficult for the
-blue-orange edge. A positioning move brings blue-orange, it's
-destination position, and another free position to the same layer. This
-move is undone at the end of the sequence.<br>
-            <br>
-Now, the last layer. You'll notice that only the blue-white-red corner
-is at a correct place, the three others must be swapped. Then, three
-edges are swapped, because the white-red edge only is where it needs to
-be. Finally, we have to fix the orientations.<br>
-            </td>
-            <td style="vertical-align: middle;">&nbsp;<applet code="ch.randelshofer.rubik.RubikPlayerApp.class" archive="/web/20041208083322oe_/http://grrroux.free.fr/begin/rubikplayer.zip" height="400" width="350"><param name="beta" value="30"><param name="backgroundColor" value="0xFFFFFF"> <param name="displayLines" value="10"> <param name="scriptLanguage" value="HarrisENG"> <param name="scriptType" value="Solver"> <param name="script" value="[solve a layer] DR2BR'DBEBL2D'BDB'F'D'FU2\n
-[red-green] y2z' (MSDS'D2'M') U (MSDS'D2'M')' U'\n
-[red-blue] x2 (MSDS'D2'M') U (MSDS'D2'M')' U'\n
-[green-orange] x' (MSDS'D2'M') U (MSDS'D2'M')' U'\n
-[blue-orange] b (MSDS'D2'M') U (MSDS'D2'M')' U' b'\n
-[swap 3 corners] z'y' (LU'RD2R'UL') U' (LU'RD2R'UL')' U\n
-[swap 3 edges] (MSDS'D2'M') U' (MSDS'D2'M')' U\n
-[rotate 2 corners] (R'DRFDF') U2 (R'DRFDF')' U2\n
-[rotate 2 edges] y (FEF2E2F) U (FEF2E2F)' U' z2"><br>
-            </applet><br>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <br>
-      </td>
-    </tr>
-    <tr>
-      <td style="vertical-align: top; background-color: rgb(204, 204, 204);"><big><big><span style="font-weight: bold;">Improvements</span></big></big><br>
-      </td>
-    </tr>
-    <tr>
-      <td style="vertical-align: top; background-color: rgb(240, 240, 240);"><br>
-      <table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
-        <tbody>
-          <tr>
-            <td style="vertical-align: top; background-color: rgb(255, 255, 255);"><big><big><span style="font-weight: bold;">Working with slices</span></big></big><br>
-            </td>
-          </tr>
-          <tr>
-            <td style="vertical-align: top;"><br>
-All the examples above were based on working with a side of the cube.
-You can apply the same rules to inner slices as well.<br>
-X must be a move that rearranges pieces of a slice, and Y a move of
-this slice.<br>
-            <br>
-            <table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
-              <tbody>
-                <tr>
-                  <td style="vertical-align: middle;"><span style="text-decoration: underline;">Example</span>: Permutation of
-three edges in a slice.<br>
-- Swap up-front and up-back edges (X).<br>
-- Move center slice (Y).<br>
-- Swap up-front and up-back edges again (X'=X).<br>
-- Move center slice back (Y').<br>
-                  </td>
-                  <td style="vertical-align: middle; text-align: center;"><applet code="ch.randelshofer.rubik.RubikPlayerApp.class" archive="/web/20041208083322oe_/http://grrroux.free.fr/begin/rubikplayer.zip" height="200" width="200"> <param name="beta" value="30"> <param name="backgroundColor" value="0xFFFFFF"> <param name="displayLines" value="0"> <param name="scriptLanguage" value="HarrisENG"> <param name="scriptType" value="Solver"> <param name="script" value="U2M'U2M"></applet><br>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <br>
-            </td>
-          </tr>
-          <tr>
-            <td style="background-color: rgb(255, 255, 255); vertical-align: top;"><big><big><span style="font-weight: bold;">Different kinds of pieces</span></big></big><br>
-            </td>
-          </tr>
-          <tr>
-            <td style="vertical-align: top;"><br>
-            <table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
-              <tbody>
-                <tr>
-                  <td style="vertical-align: middle;">For now, we've
-only worked with corners or edges, but never both kinds of pieces at
-the same moment. Why not? It's exactly the same principle. On the
-example, two corner-edge blocks are removed from the first layer and
-swapped.<br>
-                  </td>
-                  <td style="vertical-align: middle; text-align: center;"><applet code="ch.randelshofer.rubik.RubikPlayerApp.class" archive="/web/20041208083322oe_/http://grrroux.free.fr/begin/rubikplayer.zip" height="200" width="200"> <param name="beta" value="30"> <param name="backgroundColor" value="0xFFFFFF"> <param name="displayLines" value="0"> <param name="scriptLanguage" value="HarrisENG"> <param name="scriptType" value="Solver"> <param name="script" value="(LU'Rd2R'UL')U(LU'Rd2R'UL')'U'"></applet><br>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <br>
-            </td>
-          </tr>
-          <tr>
-            <td style="vertical-align: top; background-color: rgb(255, 255, 255);"><big><big><span style="font-weight: bold;">More interesting commutators</span></big></big><br>
-            </td>
-          </tr>
-          <tr>
-            <td style="vertical-align: top;"><br>
-In order to make things clear for beginners, I described a technique
-based on changing things in a single layer. But commutators can be much
-more powerful.<br>
-Try to see how and why they work. Hint: The Y move doesn't compromise
-any pieces but the ones we need to move.<br>
-            <br>
-            <table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
-              <tbody>
-                <tr>
-                  <td style="height: 50%; width: 50%; text-align: center; vertical-align: middle;"><applet code="ch.randelshofer.rubik.RubikPlayerApp.class" archive="/web/20041208083322oe_/http://grrroux.free.fr/begin/rubikplayer.zip" height="200" width="200"> <param name="beta" value="30"> <param name="backgroundColor" value="0xFFFFFF"> <param name="displayLines" value="0"> <param name="scriptLanguage" value="HarrisENG"> <param name="scriptType" value="Solver"> <param name="script" value="(U'R'U)L(U'R'U)'L'"></applet><br>
-Swap three corners<br>
-                  </td>
-                  <td style="height: 50%; width: 50%; text-align: center; vertical-align: middle;"><applet code="ch.randelshofer.rubik.RubikPlayerApp.class" archive="/web/20041208083322oe_/http://grrroux.free.fr/begin/rubikplayer.zip" height="200" width="200"> <param name="beta" value="30"> <param name="backgroundColor" value="0xFFFFFF"> <param name="displayLines" value="0"> <param name="scriptLanguage" value="HarrisENG"> <param name="scriptType" value="Solver"> <param name="script" value="(FR'F')M'(FR'F')'M"></applet><br>
-Swap three edges<br>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <br>
-            </td>
-          </tr>
-          <tr style="font-weight: bold;">
-            <td style="vertical-align: top; background-color: rgb(255, 255, 255);"><big><big>Same
-random cube, but optimized solving</big></big></td>
-          </tr>
-          <tr>
-            <td style="vertical-align: top;">
-            <table style="width: 100%; text-align: left;" border="0" cellpadding="2" cellspacing="2">
-              <tbody>
-                <tr>
-                  <td style="vertical-align: middle;">Now we'll make
-use of some improvements.<br>
-                  <br>
-Green-orange and green-red edges can be solved simulaneously with a
-commutator based on a slice, after an easy positioning.<br>
-Then I decided to swap three corners in an efficient way.<br>
-Two edges again: Green-white and blue-orange.<br>
-Then, the three last edges at a wrong place are moved.<br>
-In the end, two misoriented edges are fixed.<br>
-                  <br>
-Once the first layered is completed, everything is based on an
-identical strategy: P.X.Y.X'.Y'.P'.<br>
-                  </td>
-                  <td style="vertical-align: middle;">&nbsp;<applet code="ch.randelshofer.rubik.RubikPlayerApp.class" archive="/web/20041208083322oe_/http://grrroux.free.fr/begin/rubikplayer.zip" height="400" width="350"><param name="beta" value="30"><param name="backgroundColor" value="0xFFFFFF"> <param name="displayLines" value="7"> <param name="scriptLanguage" value="HarrisENG"> <param name="scriptType" value="Solver"> <param name="script" value="[solve a layer] DR2BR'DBEBL2D'BDB'F'D'FU2\n
-[green-orange+green-red] z'x2 D2 U2 M' U2' M D2'\n
-[corners] z'y' B (B'RB) L' (B'RB)' L B'\n
-[green-white+blue-orange] (BL2D') U2 M U2' M' (BL2D')'\n
-[position last edges] y2 d' (R'ER) U' (R'ER)' U d\n
-[final orientation] R (R'E'R2E2R') U2 (R'E'R2E2R')' U2 R' z2"><br>
-                  </applet><br>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <br>
-      </td>
-    </tr>
-  </tbody>
+  </table>
+</center>
+
+<!-- <p>&nbsp;</p> -->
+
+
+<!-- ============================================================ -->
+<!--                                                              -->
+<!--      Functions                                               -->
+<!--                                                              -->
+<!-- ============================================================ -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- ============================================================ -->
+
+
+<!-- ============================================================ -->
+
+
+<!-- ============================================================ -->
+
+
+<!-- ============================================================ -->
+<!--      Introduction                                            -->
+<!-- ============================================================ -->
+
+<p>A while ago I invented a method to solve the 3x3 blindfolded using only a single algorithm (repeatedly). I used this <a href="https://www.stefan-pochmann.info/spocc/blindsolving/3x3_single_alg/">old method</a> myself for a while, even in the European Championship 2004, but since then I've improved it a lot. This page describes the resulting method. My current record for solving a 3x3 blindfolded with this new method is 5:26.80 minutes (including memorization). And not only is the new version much more powerful, but also much easier. Thanks to <a href="https://web.archive.org/web/20071021024048/http://www.randelshofer.ch/">Werner Randelshofer</a> for the great Java applet I use.</p>
+
+<p align="center">
+<a href="#Algorithms">Algorithms</a> -
+<a href="#Advantages">Advantages</a> -
+<a href="#ExampleSolve">Example Solve</a> -
+<a href="#SetupAlgorithms">Setup Algorithms</a> -
+<a href="#Memorization">Memorization</a> -
+<a href="#SomeLastWords">Some Last Words</a>
+</p>
+
+<p>I claim <font color="#339933"><b>anyone can solve the 3x3 blindfolded</b></font> (at least any speedcuber ;-) after some preparation. Even (or "especially" ?) <a href="https://web.archive.org/web/20071021024048/http://www.ws.binghamton.edu/fridrich/blindfold.html">Jessica Fridrich</a> who claims <font color="#99FF66">"I have to tell you that I could never solve the cube blindfolded. [...] My mind simply does not work this way"</font>. I'll ask her to look at this page and think about it again. What do you think when somebody says he could never solve the cube (looking, *not* blindfolded)?!?</p>
+
+<p>Blindsolving roughly consists of these three steps, that I'll describe in detail:</p>
+
+<blockquote>
+<dl>
+  <dt><b><font color="#339933">Analysis</font></b></dt>
+  <dd>You could memorize the cube in a very raw way, for example memorize what cubie is at the ULF position, then what is at UF, then at UFR, then UL, etc. Somewhat linear. But this is pretty naive. A much better way is to determine "cycles" and memorize/solve along these cycles. Do as much analysis as possible *before* putting on the blindfold! With my method, you basically do *all* thinking while still looking at the cube. As soon as you put on the blindfold, you just need to execute what you planned earlier.</dd>
+
+  <dt><b><font color="#339933">Memorization</font></b></dt>
+  <dd>Of course you need to transfer the information you gathered when looking at the cube to the phase of solving after being blindfolded. I'll show you my technique.</dd>
+
+  <dt><b><font color="#339933">Execution</font></b></dt>
+  <dd>Currently I use a handful of algorithms, which most speedcubers will know already anyway, since they're sweet PLL algorithms. You'll also need some "setup-moves", but they're now very short and intuitive.</dd>
+</dl>
+</blockquote>
+
+<!-- ============================================================ -->
+<!--      Algorithms                                              -->
+<!-- ============================================================ -->
+
+<p><a name="Algorithms">&nbsp;</a></p>
+<p><font size="+2" color="#00FF00">Algorithms</font></p>
+
+<p>The basic idea is to always just swap 2 cubies at a time. I can hear you say "That's impossible", and you're right. So when I swap two edges, I also swap two specific corners. For the next edge-swap, these two corners are swapped back. And vice versa when I solve the corners. I use a "buffer" position from which I "shoot" a cubie to certain other "target" positions, thereby solving that cubie. So I <u>solve one cubie at a time</u>. The buffer position plus the two others I have to swap (for the reason mentioned above) is called "buffer area". These are the algorithms I use:<p>
+
+<center>
+<table border="1" cellspacing="0" cellpadding="8" width="90%">
+
+    <tr valign="top">
+    <td align="left">
+      The buffer position for edges is UR, the buffer area also contains the URF and UBR corners. The position to shoot at is UL. Note that the buffer area is as compact as possible (an edge with it's two adjacent corners) whereas the target position is pretty free. This very fast algorithm <nobr>(19-1</nobr> from <a href="https://web.archive.org/web/20071021024048/http://www.speedcubing.com/peter/AllesFastPermute.html">Peter Jansen's page</a>) solves the T-permutation and should be known to any speedcuber as one of the PLL algorithms.    </td>
+    <td>
+      <applet code="ch.randelshofer.rubik.RubikPlayerApp.class" archive="rubikplayer.zip" width="176" height="163">
+        <param name="scriptType" value="Generator"/>
+        <param name="faces" value="1,0,2,4,3,5">
+        <param name="scriptLanguage" value="HarrisENG"/>
+        <param name="initScript" value=""/>
+        <param name="script" value="(R U R' U') (R' F R2 U' R' U' R U) (R' F')"/>
+      </applet>
+    </td>
+  </tr>
+
+    <tr valign="top">
+    <td align="left">
+      The target edge here is UF. Also a well-known and fast PLL algorithm.    </td>
+    <td>
+      <applet code="ch.randelshofer.rubik.RubikPlayerApp.class" archive="/web/20071021024048oe_/http://www.stefan-pochmann.info/spocc/internals/rubikplayer.zip" width="176" height="163">
+        <param name="scriptType" value="Generator"/>
+        <param name="faces" value="1,0,2,4,3,5">
+        <param name="scriptLanguage" value="HarrisENG"/>
+        <param name="initScript" value=""/>
+        <param name="script" value="(L' U) (R U') (L U2') (R' U) (R U2 R')"/>
+      </applet>
+    </td>
+  </tr>
+
+    <tr valign="top">
+    <td align="left">
+      The target edge here is UB. Also a well-known and fast PLL algorithm.    </td>
+    <td>
+      <applet code="ch.randelshofer.rubik.RubikPlayerApp.class" archive="/web/20071021024048oe_/http://www.stefan-pochmann.info/spocc/internals/rubikplayer.zip" width="176" height="163">
+        <param name="scriptType" value="Generator"/>
+        <param name="faces" value="1,0,2,4,3,5">
+        <param name="scriptLanguage" value="HarrisENG"/>
+        <param name="initScript" value=""/>
+        <param name="script" value="(L U') (R' U) (L' U2') (R U') (R' U2 R)"/>
+      </applet>
+    </td>
+  </tr>
+
+    <tr valign="top">
+    <td align="left">
+      This is used for solving the corners. Buffer position is ULB, buffer area also includes the edges UL and UB. Target is RDF. Note again how compact the buffer area is and how free the target area. This is not a PLL, but very close. If you switch the two halves, it's the same as the T-permutation algorithm above! Thanks a lot to Lars Vandenbergh who told me about this (actually of course he told me something slightly different, namely the PLL alg F (R U' R' U' R U R' F') (R U R' U' R' F R) F').    </td>
+    <td>
+      <applet code="ch.randelshofer.rubik.RubikPlayerApp.class" archive="/web/20071021024048oe_/http://www.stefan-pochmann.info/spocc/internals/rubikplayer.zip" width="176" height="163">
+        <param name="scriptType" value="Generator"/>
+        <param name="faces" value="1,0,2,4,3,5">
+        <param name="scriptLanguage" value="HarrisENG"/>
+        <param name="initScript" value=""/>
+        <param name="script" value="(R U' R' U' R U R' F') (R U R' U' R' F R)"/>
+      </applet>
+    </td>
+  </tr>
+
 </table>
-<br>
-<div style="text-align: center;"><big><a href="http://grrroux.free.fr/index.html">Return to
-home</a></big><br>
-</div>
+</center>
+
+<p>Note that you can of course use other algorithms that do the same things. After all, not everybody uses the same PLL algs.</p>
+
+<!-- ============================================================ -->
+<!--      Setup-Algs                                              -->
+<!-- ============================================================ -->
+
+<p>There are of course more possible target positions than those covered by the few algorithms above. What you need to use are "setup-moves" that are done before the algorithm and then undone afterwards:</p>
+
+<center>
+<table border="1" cellspacing="0" cellpadding="8" width="90%">
+
+    <tr valign="top">
+    <td align="left">
+      Shooting to target FR, using the T-permutation alg. For that, think of it as the FR *position* coming to UL with the setup-moves (d2 L), then shooting there (as it's now at UL), and then bringing the position (together with the cubie) back. Note that the setup-moves must not destroy the buffer area! At the end, simply undo the setup-moves.    </td>
+    <td>
+      <applet code="ch.randelshofer.rubik.RubikPlayerApp.class" archive="/web/20071021024048oe_/http://www.stefan-pochmann.info/spocc/internals/rubikplayer.zip" width="176" height="163">
+        <param name="scriptType" value="Generator"/>
+        <param name="faces" value="1,0,2,4,3,5">
+        <param name="scriptLanguage" value="HarrisENG"/>
+        <param name="initScript" value=""/>
+        <param name="script" value="(d2 L) (R U R' U' R' F R2 U' R' U' R U R' F') (L' d2)"/>
+      </applet>
+    </td>
+  </tr>
+
+    <tr valign="top">
+    <td align="left">
+      Also note that FR is *not* the same as RF. You can shoot to RF by using the setup-moves (d' L'). The difference is very important, since you don't just want to bring the cubies to the correct place, but also with the correct orientation, right?    </td>
+    <td>
+      <applet code="ch.randelshofer.rubik.RubikPlayerApp.class" archive="/web/20071021024048oe_/http://www.stefan-pochmann.info/spocc/internals/rubikplayer.zip" width="176" height="163">
+        <param name="scriptType" value="Generator"/>
+        <param name="faces" value="1,0,2,4,3,5">
+        <param name="scriptLanguage" value="HarrisENG"/>
+        <param name="initScript" value=""/>
+        <param name="script" value="(d' L') (R U R' U' R' F R2 U' R' U' R U R' F') (L d)"/>
+      </applet>
+    </td>
+  </tr>
+
+</table>
+</center>
+
+
+
+<!-- ============================================================ -->
+<!--      Advantages                                              -->
+<!-- ============================================================ -->
+
+<p><a name="Advantages">&nbsp;</a></p>
+<p><font size="+2" color="#00FF00">Advantages</font></p>
+
+<p>When I came up with this method I didn't intend to use it but now I do. It has several advantages that make it my choice of blindfold system:</p>
+
+<ul>
+  <li>Very easy setup-moves, since always only one target position needs to be set up. Complicated setup-moves are the main reason for mistakes!</li>
+  <li>Only very few algorithms to learn and they're mostly very fast PLL algs that you probably know anyway.</li>
+  <li>You can use other ways to memorize than the one I'll tell you about, but I think it's very good.</li>
+  <li>Parity problem is easily handled.</li>
+  <li>Orientation and permutation done together. Yes, I see this as a plus... many others do orientation and permutation separately.</li>
+</ul>
+
+
+
+<!-- ============================================================ -->
+<!--      Example                                                 -->
+<!-- ============================================================ -->
+
+<p><a name="ExampleSolve">&nbsp;</a></p>
+<p><font size="+2" color="#00FF00">Example Solve</font></p>
+
+<center>
+<table border="1" cellspacing="0" cellpadding="8" width="90%">
+
+        <!-- ============================================================ -->
+        <!--      Scramble                                                -->
+        <!-- ============================================================ -->
+
+  <tr><td colspan="2" bgcolor="#333333"><p><font size="+1" color="#00FF00">Scramble...</font></p></td></tr>
+
+    <tr valign="top">
+    <td align="left">
+      <p>To demonstrate my method I'll use a scrambling algorithm from the <a href="https://web.archive.org/web/20071021024048/http://www.speedcubing.com/chris/bdcontest.html">Sunday Blindfolded Rubik's Games Contest</a>:</p><p align="center"><code>D2 R2 B2 L' R2 B2 R2 D' R2 F U B R2 D' B L' F' U2 F2 U' D2 R D' B U2</code></p>    </td>
+    <td>
+      <applet code="ch.randelshofer.rubik.RubikPlayerApp.class" archive="/web/20071021024048oe_/http://www.stefan-pochmann.info/spocc/internals/rubikplayer.zip" width="176" height="163">
+        <param name="scriptType" value="Generator"/>
+        <param name="faces" value="1,0,2,4,3,5">
+        <param name="scriptLanguage" value="HarrisENG"/>
+        <param name="initScript" value=""/>
+        <param name="script" value="D2 R2 B2 L' R2 B2 R2 D' R2 F U B R2 D' B L' F' U2 F2 U' D2 R D' B U2"/>
+      </applet>
+    </td>
+  </tr>
+
+
+        <!-- ============================================================ -->
+        <!--      Edges                                                   -->
+        <!-- ============================================================ -->
+
+  <tr><td colspan="2" bgcolor="#333333"><p><font size="+1" color="#00FF00">Edges...</font></p></td></tr>
+
+    <tr valign="top">
+    <td align="left">
+      <p>You can see the orange/blue <font color="#8080FF"><b>FR</b></font> piece in the buffer position UR. So let's shoot it to its goal position using the setup-alg (d2 L):</p>    </td>
+    <td>
+      <applet code="ch.randelshofer.rubik.RubikPlayerApp.class" archive="/web/20071021024048oe_/http://www.stefan-pochmann.info/spocc/internals/rubikplayer.zip" width="176" height="163">
+        <param name="scriptType" value="Generator"/>
+        <param name="faces" value="1,0,2,4,3,5">
+        <param name="scriptLanguage" value="HarrisENG"/>
+        <param name="initScript" value="D2 R2 B2 L' R2 B2 R2 D' R2 F U B R2 D' B L' F' U2 F2 U' D2 R D' B U2"/>
+        <param name="script" value="(d2 L) (R U R' U' R' F R2 U' R' U' R U R' F') (L' d2)"/>
+      </applet>
+    </td>
+  </tr>
+
+
+    <tr valign="top">
+    <td align="left">
+      The yellow/green cubie needs to be shot to <font color="#8080FF"><b>UL</b></font> so no setup-algorithm is needed this time:    </td>
+    <td>
+      <applet code="ch.randelshofer.rubik.RubikPlayerApp.class" archive="/web/20071021024048oe_/http://www.stefan-pochmann.info/spocc/internals/rubikplayer.zip" width="176" height="163">
+        <param name="scriptType" value="Generator"/>
+        <param name="faces" value="1,0,2,4,3,5">
+        <param name="scriptLanguage" value="HarrisENG"/>
+        <param name="initScript" value="D2 R2 B2 L' R2 B2 R2 D' R2 F U B R2 D' B L' F' U2 F2 U' D2 R D' B U2(d2 L) (R U R' U' R' F R2 U' R' U' R U R' F') (L' d2)"/>
+        <param name="script" value="(R U R' U' R' F R2 U' R' U' R U R' F')"/>
+      </applet>
+    </td>
+  </tr>
+
+
+    <tr valign="top">
+    <td align="left">
+      Orange/white goes to <font color="#8080FF"><b>FD</b></font> using setup-alg (l'):    </td>
+    <td>
+      <applet code="ch.randelshofer.rubik.RubikPlayerApp.class" archive="/web/20071021024048oe_/http://www.stefan-pochmann.info/spocc/internals/rubikplayer.zip" width="176" height="163">
+        <param name="scriptType" value="Generator"/>
+        <param name="faces" value="1,0,2,4,3,5">
+        <param name="scriptLanguage" value="HarrisENG"/>
+        <param name="initScript" value="D2 R2 B2 L' R2 B2 R2 D' R2 F U B R2 D' B L' F' U2 F2 U' D2 R D' B U2(d2 L) (R U R' U' R' F R2 U' R' U' R U R' F') (L' d2)(R U R' U' R' F R2 U' R' U' R U R' F')"/>
+        <param name="script" value="(l') (L' U R U' L U2' R' U R U2 R') (l)"/>
+      </applet>
+    </td>
+  </tr>
+
+
+    <tr valign="top">
+    <td align="left">
+      White/red goes to <font color="#8080FF"><b>DB</b></font> using setup-alg (l2):    </td>
+    <td>
+      <applet code="ch.randelshofer.rubik.RubikPlayerApp.class" archive="/web/20071021024048oe_/http://www.stefan-pochmann.info/spocc/internals/rubikplayer.zip" width="176" height="163">
+        <param name="scriptType" value="Generator"/>
+        <param name="faces" value="1,0,2,4,3,5">
+        <param name="scriptLanguage" value="HarrisENG"/>
+        <param name="initScript" value="D2 R2 B2 L' R2 B2 R2 D' R2 F U B R2 D' B L' F' U2 F2 U' D2 R D' B U2(d2 L) (R U R' U' R' F R2 U' R' U' R U R' F') (L' d2)(R U R' U' R' F R2 U' R' U' R U R' F')(l') (L' U R U' L U2' R' U R U2 R') (l)"/>
+        <param name="script" value="(l2) (L' U R U' L U2' R' U R U2 R') (l2)"/>
+      </applet>
+    </td>
+  </tr>
+
+
+    <tr valign="top">
+    <td align="left">
+      White/blue goes to <font color="#8080FF"><b>DR</b></font> using setup-alg (D2 L2):    </td>
+    <td>
+      <applet code="ch.randelshofer.rubik.RubikPlayerApp.class" archive="/web/20071021024048oe_/http://www.stefan-pochmann.info/spocc/internals/rubikplayer.zip" width="176" height="163">
+        <param name="scriptType" value="Generator"/>
+        <param name="faces" value="1,0,2,4,3,5">
+        <param name="scriptLanguage" value="HarrisENG"/>
+        <param name="initScript" value="D2 R2 B2 L' R2 B2 R2 D' R2 F U B R2 D' B L' F' U2 F2 U' D2 R D' B U2(d2 L) (R U R' U' R' F R2 U' R' U' R U R' F') (L' d2)(R U R' U' R' F R2 U' R' U' R U R' F')(l') (L' U R U' L U2' R' U R U2 R') (l)(l2) (L' U R U' L U2' R' U R U2 R') (l2)"/>
+        <param name="script" value="(D2 L2) (R U R' U' R' F R2 U' R' U' R U R' F') (L2 D2)"/>
+      </applet>
+    </td>
+  </tr>
+
+
+    <tr valign="top">
+    <td align="left">
+      Yellow/orange goes to <font color="#8080FF"><b>UF</b></font> without setup-moves.    </td>
+    <td>
+      <applet code="ch.randelshofer.rubik.RubikPlayerApp.class" archive="/web/20071021024048oe_/http://www.stefan-pochmann.info/spocc/internals/rubikplayer.zip" width="176" height="163">
+        <param name="scriptType" value="Generator"/>
+        <param name="faces" value="1,0,2,4,3,5">
+        <param name="scriptLanguage" value="HarrisENG"/>
+        <param name="initScript" value="D2 R2 B2 L' R2 B2 R2 D' R2 F U B R2 D' B L' F' U2 F2 U' D2 R D' B U2(d2 L) (R U R' U' R' F R2 U' R' U' R U R' F') (L' d2)(R U R' U' R' F R2 U' R' U' R U R' F')(l') (L' U R U' L U2' R' U R U2 R') (l)(l2) (L' U R U' L U2' R' U R U2 R') (l2)(D2 L2) (R U R' U' R' F R2 U' R' U' R U R' F') (L2 D2)"/>
+        <param name="script" value="(L' U R U' L U2' R' U R U2 R')"/>
+      </applet>
+    </td>
+  </tr>
+
+
+    <tr valign="top">
+    <td align="left">
+      Green/red goes to <font color="#8080FF"><b>LB</b></font> using setup-alg (d L'):    </td>
+    <td>
+      <applet code="ch.randelshofer.rubik.RubikPlayerApp.class" archive="/web/20071021024048oe_/http://www.stefan-pochmann.info/spocc/internals/rubikplayer.zip" width="176" height="163">
+        <param name="scriptType" value="Generator"/>
+        <param name="faces" value="1,0,2,4,3,5">
+        <param name="scriptLanguage" value="HarrisENG"/>
+        <param name="initScript" value="D2 R2 B2 L' R2 B2 R2 D' R2 F U B R2 D' B L' F' U2 F2 U' D2 R D' B U2(d2 L) (R U R' U' R' F R2 U' R' U' R U R' F') (L' d2)(R U R' U' R' F R2 U' R' U' R U R' F')(l') (L' U R U' L U2' R' U R U2 R') (l)(l2) (L' U R U' L U2' R' U R U2 R') (l2)(D2 L2) (R U R' U' R' F R2 U' R' U' R U R' F') (L2 D2)(L' U R U' L U2' R' U R U2 R')"/>
+        <param name="script" value="(d L') (R U R' U' R' F R2 U' R' U' R U R' F') (L d')"/>
+      </applet>
+    </td>
+  </tr>
+
+
+    <tr valign="top">
+    <td align="left">
+      <p>Exception! Now in the buffer spot UR we have the correct edge cubie (just flipped)! Note however that we never care at all about this cubie! Instead, we'll just solve the remaining eleven. Which of course means this cubie will automatically be solved at the end as well. But what do we do now? We just pick an *unsolved* edge and get it *into* the buffer. Let's simply get <font color="#8080FF"><b>UB</b></font> needing no setup-moves.</p>    </td>
+    <td>
+      <applet code="ch.randelshofer.rubik.RubikPlayerApp.class" archive="/web/20071021024048oe_/http://www.stefan-pochmann.info/spocc/internals/rubikplayer.zip" width="176" height="163">
+        <param name="scriptType" value="Generator"/>
+        <param name="faces" value="1,0,2,4,3,5">
+        <param name="scriptLanguage" value="HarrisENG"/>
+        <param name="initScript" value="D2 R2 B2 L' R2 B2 R2 D' R2 F U B R2 D' B L' F' U2 F2 U' D2 R D' B U2(d2 L) (R U R' U' R' F R2 U' R' U' R U R' F') (L' d2)(R U R' U' R' F R2 U' R' U' R U R' F')(l') (L' U R U' L U2' R' U R U2 R') (l)(l2) (L' U R U' L U2' R' U R U2 R') (l2)(D2 L2) (R U R' U' R' F R2 U' R' U' R U R' F') (L2 D2)(L' U R U' L U2' R' U R U2 R')(d L') (R U R' U' R' F R2 U' R' U' R U R' F') (L d')"/>
+        <param name="script" value="(L U' R' U L' U2' R U' R' U2 R)"/>
+      </applet>
+    </td>
+  </tr>
+
+
+    <tr valign="top">
+    <td align="left">
+      Now we can shoot that white/green cubie to <font color="#8080FF"><b>DL</b></font> using setup-alg (L2):    </td>
+    <td>
+      <applet code="ch.randelshofer.rubik.RubikPlayerApp.class" archive="/web/20071021024048oe_/http://www.stefan-pochmann.info/spocc/internals/rubikplayer.zip" width="176" height="163">
+        <param name="scriptType" value="Generator"/>
+        <param name="faces" value="1,0,2,4,3,5">
+        <param name="scriptLanguage" value="HarrisENG"/>
+        <param name="initScript" value="D2 R2 B2 L' R2 B2 R2 D' R2 F U B R2 D' B L' F' U2 F2 U' D2 R D' B U2(d2 L) (R U R' U' R' F R2 U' R' U' R U R' F') (L' d2)(R U R' U' R' F R2 U' R' U' R U R' F')(l') (L' U R U' L U2' R' U R U2 R') (l)(l2) (L' U R U' L U2' R' U R U2 R') (l2)(D2 L2) (R U R' U' R' F R2 U' R' U' R U R' F') (L2 D2)(L' U R U' L U2' R' U R U2 R')(d L') (R U R' U' R' F R2 U' R' U' R U R' F') (L d')(L U' R' U L' U2' R U' R' U2 R)"/>
+        <param name="script" value="(L2) (R U R' U' R' F R2 U' R' U' R U R' F') (L2)"/>
+      </applet>
+    </td>
+  </tr>
+
+
+    <tr valign="top">
+    <td align="left">
+      Orange/green goes to <font color="#8080FF"><b>FL</b></font> using setup-alg (L'):    </td>
+    <td>
+      <applet code="ch.randelshofer.rubik.RubikPlayerApp.class" archive="/web/20071021024048oe_/http://www.stefan-pochmann.info/spocc/internals/rubikplayer.zip" width="176" height="163">
+        <param name="scriptType" value="Generator"/>
+        <param name="faces" value="1,0,2,4,3,5">
+        <param name="scriptLanguage" value="HarrisENG"/>
+        <param name="initScript" value="D2 R2 B2 L' R2 B2 R2 D' R2 F U B R2 D' B L' F' U2 F2 U' D2 R D' B U2(d2 L) (R U R' U' R' F R2 U' R' U' R U R' F') (L' d2)(R U R' U' R' F R2 U' R' U' R U R' F')(l') (L' U R U' L U2' R' U R U2 R') (l)(l2) (L' U R U' L U2' R' U R U2 R') (l2)(D2 L2) (R U R' U' R' F R2 U' R' U' R U R' F') (L2 D2)(L' U R U' L U2' R' U R U2 R')(d L') (R U R' U' R' F R2 U' R' U' R U R' F') (L d')(L U' R' U L' U2' R U' R' U2 R)(L2) (R U R' U' R' F R2 U' R' U' R U R' F') (L2)"/>
+        <param name="script" value="(L') (R U R' U' R' F R2 U' R' U' R U R' F') (L)"/>
+      </applet>
+    </td>
+  </tr>
+
+
+    <tr valign="top">
+    <td align="left">
+      Finally, red/yellow goes to <font color="#8080FF"><b>BU</b></font> using setup-alg (l):    </td>
+    <td>
+      <applet code="ch.randelshofer.rubik.RubikPlayerApp.class" archive="/web/20071021024048oe_/http://www.stefan-pochmann.info/spocc/internals/rubikplayer.zip" width="176" height="163">
+        <param name="scriptType" value="Generator"/>
+        <param name="faces" value="1,0,2,4,3,5">
+        <param name="scriptLanguage" value="HarrisENG"/>
+        <param name="initScript" value="D2 R2 B2 L' R2 B2 R2 D' R2 F U B R2 D' B L' F' U2 F2 U' D2 R D' B U2(d2 L) (R U R' U' R' F R2 U' R' U' R U R' F') (L' d2)(R U R' U' R' F R2 U' R' U' R U R' F')(l') (L' U R U' L U2' R' U R U2 R') (l)(l2) (L' U R U' L U2' R' U R U2 R') (l2)(D2 L2) (R U R' U' R' F R2 U' R' U' R U R' F') (L2 D2)(L' U R U' L U2' R' U R U2 R')(d L') (R U R' U' R' F R2 U' R' U' R U R' F') (L d')(L U' R' U L' U2' R U' R' U2 R)(L2) (R U R' U' R' F R2 U' R' U' R U R' F') (L2)(L') (R U R' U' R' F R2 U' R' U' R U R' F') (L)"/>
+        <param name="script" value="(l) (L' U R U' L U2' R' U R U2 R') (l')"/>
+      </applet>
+    </td>
+  </tr>
+
+
+        <!-- ============================================================ -->
+        <!--      Parity fix                                              -->
+        <!-- ============================================================ -->
+
+
+  <tr><td colspan="2" bgcolor="#333333"><p><font size="+1" color="#00FF00">Parity fix...</font></p></td></tr>
+
+
+    <tr valign="top">
+    <td align="left">
+      Now we're finished solving the edges. It took us 11 "steps", each being some (setup,PLL,setdown). So edges are solved. But what about corners? Of course only the two corners of the buffer area can be swapped. In fact, they are, because 11 is an odd number. To make up for this we'll just swap them back, so that all corners are exactly like after scrambling. But in addition, we'll also swap the two edges contained in the buffer area for solving the corners. Overall, we swap (URF,UBR) and (UL,UB). That's a PLL, but I prefer to do it with the T-permutation followed by an edge 3-cycle (without any U-adjustments). Yes, that is all you have to do to fix the parity problem. First the T-permutation to restore the corners.    </td>
+    <td>
+      <applet code="ch.randelshofer.rubik.RubikPlayerApp.class" archive="/web/20071021024048oe_/http://www.stefan-pochmann.info/spocc/internals/rubikplayer.zip" width="176" height="163">
+        <param name="scriptType" value="Generator"/>
+        <param name="faces" value="1,0,2,4,3,5">
+        <param name="scriptLanguage" value="HarrisENG"/>
+        <param name="initScript" value="D2 R2 B2 L' R2 B2 R2 D' R2 F U B R2 D' B L' F' U2 F2 U' D2 R D' B U2(d2 L) (R U R' U' R' F R2 U' R' U' R U R' F') (L' d2)(R U R' U' R' F R2 U' R' U' R U R' F')(l') (L' U R U' L U2' R' U R U2 R') (l)(l2) (L' U R U' L U2' R' U R U2 R') (l2)(D2 L2) (R U R' U' R' F R2 U' R' U' R U R' F') (L2 D2)(L' U R U' L U2' R' U R U2 R')(d L') (R U R' U' R' F R2 U' R' U' R U R' F') (L d')(L U' R' U L' U2' R U' R' U2 R)(L2) (R U R' U' R' F R2 U' R' U' R U R' F') (L2)(L') (R U R' U' R' F R2 U' R' U' R U R' F') (L)(l) (L' U R U' L U2' R' U R U2 R') (l')"/>
+        <param name="script" value="(R U R' U' R' F R2 U' R' U' R U R' F')"/>
+      </applet>
+    </td>
+  </tr>
+
+
+    <tr valign="top">
+    <td align="left">
+      <p>Then do the edge 3-cycle to have the correct two edges swapped.</p>    </td>
+    <td>
+      <applet code="ch.randelshofer.rubik.RubikPlayerApp.class" archive="/web/20071021024048oe_/http://www.stefan-pochmann.info/spocc/internals/rubikplayer.zip" width="176" height="163">
+        <param name="scriptType" value="Generator"/>
+        <param name="faces" value="1,0,2,4,3,5">
+        <param name="scriptLanguage" value="HarrisENG"/>
+        <param name="initScript" value="D2 R2 B2 L' R2 B2 R2 D' R2 F U B R2 D' B L' F' U2 F2 U' D2 R D' B U2(d2 L) (R U R' U' R' F R2 U' R' U' R U R' F') (L' d2)(R U R' U' R' F R2 U' R' U' R U R' F')(l') (L' U R U' L U2' R' U R U2 R') (l)(l2) (L' U R U' L U2' R' U R U2 R') (l2)(D2 L2) (R U R' U' R' F R2 U' R' U' R U R' F') (L2 D2)(L' U R U' L U2' R' U R U2 R')(d L') (R U R' U' R' F R2 U' R' U' R U R' F') (L d')(L U' R' U L' U2' R U' R' U2 R)(L2) (R U R' U' R' F R2 U' R' U' R U R' F') (L2)(L') (R U R' U' R' F R2 U' R' U' R U R' F') (L)(l) (L' U R U' L U2' R' U R U2 R') (l')(R U R' U' R' F R2 U' R' U' R U R' F')"/>
+        <param name="script" value="R2 U' R' U' R U R U R U' R"/>
+      </applet>
+    </td>
+  </tr>
+
+
+        <!-- ============================================================ -->
+        <!--      Corners                                                 -->
+        <!-- ============================================================ -->
+
+  <tr><td colspan="2" bgcolor="#333333"><p><font size="+1" color="#00FF00">Corners...</font></p></td></tr>
+
+    <tr valign="top">
+    <td align="left">
+      Now we'll use the ULB corner together with the UL and UB edges as buffer and we'll "shoot" to RDF. The yellow/red/blue (clockwise around the corner) needs to go to UBR. Actually I only write the first two colors/faces, so I'd say the yellow/red corner needs to go to <font color="#8080FF"><b>UB</b></font>. From the context it should always be clear whether an edge or corner is meant. Use the setup-alg (R D'). Also notice that after this, all edges are of course solved again!    </td>
+    <td>
+      <applet code="ch.randelshofer.rubik.RubikPlayerApp.class" archive="/web/20071021024048oe_/http://www.stefan-pochmann.info/spocc/internals/rubikplayer.zip" width="176" height="163">
+        <param name="scriptType" value="Generator"/>
+        <param name="faces" value="1,0,2,4,3,5">
+        <param name="scriptLanguage" value="HarrisENG"/>
+        <param name="initScript" value="D2 R2 B2 L' R2 B2 R2 D' R2 F U B R2 D' B L' F' U2 F2 U' D2 R D' B U2(d2 L) (R U R' U' R' F R2 U' R' U' R U R' F') (L' d2)(R U R' U' R' F R2 U' R' U' R U R' F')(l') (L' U R U' L U2' R' U R U2 R') (l)(l2) (L' U R U' L U2' R' U R U2 R') (l2)(D2 L2) (R U R' U' R' F R2 U' R' U' R U R' F') (L2 D2)(L' U R U' L U2' R' U R U2 R')(d L') (R U R' U' R' F R2 U' R' U' R U R' F') (L d')(L U' R' U L' U2' R U' R' U2 R)(L2) (R U R' U' R' F R2 U' R' U' R U R' F') (L2)(L') (R U R' U' R' F R2 U' R' U' R U R' F') (L)(l) (L' U R U' L U2' R' U R U2 R') (l')(R U R' U' R' F R2 U' R' U' R U R' F')R2 U' R' U' R U R U R U' R"/>
+        <param name="script" value="(R D') (R U' R' U' R U R' F' R U R' U' R' F R) (D R')"/>
+      </applet>
+    </td>
+  </tr>
+
+
+    <tr valign="top">
+    <td align="left">
+      Exception! Now in the buffer spot UL (the corner, of course) we have the correct corner (just twisted)! Just like in the equivalent case for edges we had earlier, we'll just get an *unsolved* corner *into* the buffer spot. Let's be lazy and choose <font color="#8080FF"><b>RD</b></font>, that one doesn't need a setup-alg.    </td>
+    <td>
+      <applet code="ch.randelshofer.rubik.RubikPlayerApp.class" archive="/web/20071021024048oe_/http://www.stefan-pochmann.info/spocc/internals/rubikplayer.zip" width="176" height="163">
+        <param name="scriptType" value="Generator"/>
+        <param name="faces" value="1,0,2,4,3,5">
+        <param name="scriptLanguage" value="HarrisENG"/>
+        <param name="initScript" value="D2 R2 B2 L' R2 B2 R2 D' R2 F U B R2 D' B L' F' U2 F2 U' D2 R D' B U2(d2 L) (R U R' U' R' F R2 U' R' U' R U R' F') (L' d2)(R U R' U' R' F R2 U' R' U' R U R' F')(l') (L' U R U' L U2' R' U R U2 R') (l)(l2) (L' U R U' L U2' R' U R U2 R') (l2)(D2 L2) (R U R' U' R' F R2 U' R' U' R U R' F') (L2 D2)(L' U R U' L U2' R' U R U2 R')(d L') (R U R' U' R' F R2 U' R' U' R U R' F') (L d')(L U' R' U L' U2' R U' R' U2 R)(L2) (R U R' U' R' F R2 U' R' U' R U R' F') (L2)(L') (R U R' U' R' F R2 U' R' U' R U R' F') (L)(l) (L' U R U' L U2' R' U R U2 R') (l')(R U R' U' R' F R2 U' R' U' R U R' F')R2 U' R' U' R U R U R U' R(R D') (R U' R' U' R U R' F' R U R' U' R' F R) (D R')"/>
+        <param name="script" value="(R U' R' U' R U R' F' R U R' U' R' F R)"/>
+      </applet>
+    </td>
+  </tr>
+
+
+    <tr valign="top">
+    <td align="left">
+      Now in the buffer we have yellow/orange, which needs to go to <font color="#8080FF"><b>UF</b></font>. Use setup-alg (F R'). You can see that the R' of the setup-alg and the R of the algorithm cancel. I would still execute them, though. Makes me feel safer.    </td>
+    <td>
+      <applet code="ch.randelshofer.rubik.RubikPlayerApp.class" archive="/web/20071021024048oe_/http://www.stefan-pochmann.info/spocc/internals/rubikplayer.zip" width="176" height="163">
+        <param name="scriptType" value="Generator"/>
+        <param name="faces" value="1,0,2,4,3,5">
+        <param name="scriptLanguage" value="HarrisENG"/>
+        <param name="initScript" value="D2 R2 B2 L' R2 B2 R2 D' R2 F U B R2 D' B L' F' U2 F2 U' D2 R D' B U2(d2 L) (R U R' U' R' F R2 U' R' U' R U R' F') (L' d2)(R U R' U' R' F R2 U' R' U' R U R' F')(l') (L' U R U' L U2' R' U R U2 R') (l)(l2) (L' U R U' L U2' R' U R U2 R') (l2)(D2 L2) (R U R' U' R' F R2 U' R' U' R U R' F') (L2 D2)(L' U R U' L U2' R' U R U2 R')(d L') (R U R' U' R' F R2 U' R' U' R U R' F') (L d')(L U' R' U L' U2' R U' R' U2 R)(L2) (R U R' U' R' F R2 U' R' U' R U R' F') (L2)(L') (R U R' U' R' F R2 U' R' U' R U R' F') (L)(l) (L' U R U' L U2' R' U R U2 R') (l')(R U R' U' R' F R2 U' R' U' R U R' F')R2 U' R' U' R U R U R U' R(R D') (R U' R' U' R U R' F' R U R' U' R' F R) (D R')(R U' R' U' R U R' F' R U R' U' R' F R)"/>
+        <param name="script" value="(F R') (R U' R' U' R U R' F' R U R' U' R' F R) (R F')"/>
+      </applet>
+    </td>
+  </tr>
+
+
+    <tr valign="top">
+    <td align="left">
+      Yellow/blue goes to <font color="#8080FF"><b>UR</b></font> using setup-alg (F):    </td>
+    <td>
+      <applet code="ch.randelshofer.rubik.RubikPlayerApp.class" archive="/web/20071021024048oe_/http://www.stefan-pochmann.info/spocc/internals/rubikplayer.zip" width="176" height="163">
+        <param name="scriptType" value="Generator"/>
+        <param name="faces" value="1,0,2,4,3,5">
+        <param name="scriptLanguage" value="HarrisENG"/>
+        <param name="initScript" value="D2 R2 B2 L' R2 B2 R2 D' R2 F U B R2 D' B L' F' U2 F2 U' D2 R D' B U2(d2 L) (R U R' U' R' F R2 U' R' U' R U R' F') (L' d2)(R U R' U' R' F R2 U' R' U' R U R' F')(l') (L' U R U' L U2' R' U R U2 R') (l)(l2) (L' U R U' L U2' R' U R U2 R') (l2)(D2 L2) (R U R' U' R' F R2 U' R' U' R U R' F') (L2 D2)(L' U R U' L U2' R' U R U2 R')(d L') (R U R' U' R' F R2 U' R' U' R U R' F') (L d')(L U' R' U L' U2' R U' R' U2 R)(L2) (R U R' U' R' F R2 U' R' U' R U R' F') (L2)(L') (R U R' U' R' F R2 U' R' U' R U R' F') (L)(l) (L' U R U' L U2' R' U R U2 R') (l')(R U R' U' R' F R2 U' R' U' R U R' F')R2 U' R' U' R U R U R U' R(R D') (R U' R' U' R U R' F' R U R' U' R' F R) (D R')(R U' R' U' R U R' F' R U R' U' R' F R)(F R') (R U' R' U' R U R' F' R U R' U' R' F R) (R F')"/>
+        <param name="script" value="(F) (R U' R' U' R U R' F' R U R' U' R' F R) (F')"/>
+      </applet>
+    </td>
+  </tr>
+
+
+    <tr valign="top">
+    <td align="left">
+      White/green goes to <font color="#8080FF"><b>DL</b></font> using setup-alg (F'):    </td>
+    <td>
+      <applet code="ch.randelshofer.rubik.RubikPlayerApp.class" archive="/web/20071021024048oe_/http://www.stefan-pochmann.info/spocc/internals/rubikplayer.zip" width="176" height="163">
+        <param name="scriptType" value="Generator"/>
+        <param name="faces" value="1,0,2,4,3,5">
+        <param name="scriptLanguage" value="HarrisENG"/>
+        <param name="initScript" value="D2 R2 B2 L' R2 B2 R2 D' R2 F U B R2 D' B L' F' U2 F2 U' D2 R D' B U2(d2 L) (R U R' U' R' F R2 U' R' U' R U R' F') (L' d2)(R U R' U' R' F R2 U' R' U' R U R' F')(l') (L' U R U' L U2' R' U R U2 R') (l)(l2) (L' U R U' L U2' R' U R U2 R') (l2)(D2 L2) (R U R' U' R' F R2 U' R' U' R U R' F') (L2 D2)(L' U R U' L U2' R' U R U2 R')(d L') (R U R' U' R' F R2 U' R' U' R U R' F') (L d')(L U' R' U L' U2' R U' R' U2 R)(L2) (R U R' U' R' F R2 U' R' U' R U R' F') (L2)(L') (R U R' U' R' F R2 U' R' U' R U R' F') (L)(l) (L' U R U' L U2' R' U R U2 R') (l')(R U R' U' R' F R2 U' R' U' R U R' F')R2 U' R' U' R U R U R U' R(R D') (R U' R' U' R U R' F' R U R' U' R' F R) (D R')(R U' R' U' R U R' F' R U R' U' R' F R)(F R') (R U' R' U' R U R' F' R U R' U' R' F R) (R F')(F) (R U' R' U' R U R' F' R U R' U' R' F R) (F')"/>
+        <param name="script" value="(F') (R U' R' U' R U R' F' R U R' U' R' F R) (F)"/>
+      </applet>
+    </td>
+  </tr>
+
+
+    <tr valign="top">
+    <td align="left">
+      Blue/red goes to <font color="#8080FF"><b>RB</b></font> using setup-alg (R):    </td>
+    <td>
+      <applet code="ch.randelshofer.rubik.RubikPlayerApp.class" archive="/web/20071021024048oe_/http://www.stefan-pochmann.info/spocc/internals/rubikplayer.zip" width="176" height="163">
+        <param name="scriptType" value="Generator"/>
+        <param name="faces" value="1,0,2,4,3,5">
+        <param name="scriptLanguage" value="HarrisENG"/>
+        <param name="initScript" value="D2 R2 B2 L' R2 B2 R2 D' R2 F U B R2 D' B L' F' U2 F2 U' D2 R D' B U2(d2 L) (R U R' U' R' F R2 U' R' U' R U R' F') (L' d2)(R U R' U' R' F R2 U' R' U' R U R' F')(l') (L' U R U' L U2' R' U R U2 R') (l)(l2) (L' U R U' L U2' R' U R U2 R') (l2)(D2 L2) (R U R' U' R' F R2 U' R' U' R U R' F') (L2 D2)(L' U R U' L U2' R' U R U2 R')(d L') (R U R' U' R' F R2 U' R' U' R U R' F') (L d')(L U' R' U L' U2' R U' R' U2 R)(L2) (R U R' U' R' F R2 U' R' U' R U R' F') (L2)(L') (R U R' U' R' F R2 U' R' U' R U R' F') (L)(l) (L' U R U' L U2' R' U R U2 R') (l')(R U R' U' R' F R2 U' R' U' R U R' F')R2 U' R' U' R U R U R U' R(R D') (R U' R' U' R U R' F' R U R' U' R' F R) (D R')(R U' R' U' R U R' F' R U R' U' R' F R)(F R') (R U' R' U' R U R' F' R U R' U' R' F R) (R F')(F) (R U' R' U' R U R' F' R U R' U' R' F R) (F')(F') (R U' R' U' R U R' F' R U R' U' R' F R) (F)"/>
+        <param name="script" value="(R) (R U' R' U' R U R' F' R U R' U' R' F R) (R')"/>
+      </applet>
+    </td>
+  </tr>
+
+
+    <tr valign="top">
+    <td align="left">
+      Orange/blue goes to <font color="#8080FF"><b>FR</b></font> using setup-alg (R F). You could of course also mirror our algorithm, then you could directly shoot-solve the corner without setup-moves.    </td>
+    <td>
+      <applet code="ch.randelshofer.rubik.RubikPlayerApp.class" archive="/web/20071021024048oe_/http://www.stefan-pochmann.info/spocc/internals/rubikplayer.zip" width="176" height="163">
+        <param name="scriptType" value="Generator"/>
+        <param name="faces" value="1,0,2,4,3,5">
+        <param name="scriptLanguage" value="HarrisENG"/>
+        <param name="initScript" value="D2 R2 B2 L' R2 B2 R2 D' R2 F U B R2 D' B L' F' U2 F2 U' D2 R D' B U2(d2 L) (R U R' U' R' F R2 U' R' U' R U R' F') (L' d2)(R U R' U' R' F R2 U' R' U' R U R' F')(l') (L' U R U' L U2' R' U R U2 R') (l)(l2) (L' U R U' L U2' R' U R U2 R') (l2)(D2 L2) (R U R' U' R' F R2 U' R' U' R U R' F') (L2 D2)(L' U R U' L U2' R' U R U2 R')(d L') (R U R' U' R' F R2 U' R' U' R U R' F') (L d')(L U' R' U L' U2' R U' R' U2 R)(L2) (R U R' U' R' F R2 U' R' U' R U R' F') (L2)(L') (R U R' U' R' F R2 U' R' U' R U R' F') (L)(l) (L' U R U' L U2' R' U R U2 R') (l')(R U R' U' R' F R2 U' R' U' R U R' F')R2 U' R' U' R U R U R U' R(R D') (R U' R' U' R U R' F' R U R' U' R' F R) (D R')(R U' R' U' R U R' F' R U R' U' R' F R)(F R') (R U' R' U' R U R' F' R U R' U' R' F R) (R F')(F) (R U' R' U' R U R' F' R U R' U' R' F R) (F')(F') (R U' R' U' R U R' F' R U R' U' R' F R) (F)(R) (R U' R' U' R U R' F' R U R' U' R' F R) (R')"/>
+        <param name="script" value="(R F) (R U' R' U' R U R' F' R U R' U' R' F R) (F' R')"/>
+      </applet>
+    </td>
+  </tr>
+
+
+    <tr valign="top">
+    <td align="left">
+      Exception! The only thing left is to orient two corners. We could do this with a special algorithm that twists both the buffer corner ULB and the opposite corner DRF (and in our current situation using setup move D2). However, I'd like to do it in two more of those steps we've been doing the whole time, just for consistency reasons. This is the most likely algorithm I'll add in the future, though. So let's get the unsolved <font color="#8080FF"><b>LD</b></font> corner into the buffer using the setup-alg (D2):    </td>
+    <td>
+      <applet code="ch.randelshofer.rubik.RubikPlayerApp.class" archive="/web/20071021024048oe_/http://www.stefan-pochmann.info/spocc/internals/rubikplayer.zip" width="176" height="163">
+        <param name="scriptType" value="Generator"/>
+        <param name="faces" value="1,0,2,4,3,5">
+        <param name="scriptLanguage" value="HarrisENG"/>
+        <param name="initScript" value="D2 R2 B2 L' R2 B2 R2 D' R2 F U B R2 D' B L' F' U2 F2 U' D2 R D' B U2(d2 L) (R U R' U' R' F R2 U' R' U' R U R' F') (L' d2)(R U R' U' R' F R2 U' R' U' R U R' F')(l') (L' U R U' L U2' R' U R U2 R') (l)(l2) (L' U R U' L U2' R' U R U2 R') (l2)(D2 L2) (R U R' U' R' F R2 U' R' U' R U R' F') (L2 D2)(L' U R U' L U2' R' U R U2 R')(d L') (R U R' U' R' F R2 U' R' U' R U R' F') (L d')(L U' R' U L' U2' R U' R' U2 R)(L2) (R U R' U' R' F R2 U' R' U' R U R' F') (L2)(L') (R U R' U' R' F R2 U' R' U' R U R' F') (L)(l) (L' U R U' L U2' R' U R U2 R') (l')(R U R' U' R' F R2 U' R' U' R U R' F')R2 U' R' U' R U R U R U' R(R D') (R U' R' U' R U R' F' R U R' U' R' F R) (D R')(R U' R' U' R U R' F' R U R' U' R' F R)(F R') (R U' R' U' R U R' F' R U R' U' R' F R) (R F')(F) (R U' R' U' R U R' F' R U R' U' R' F R) (F')(F') (R U' R' U' R U R' F' R U R' U' R' F R) (F)(R) (R U' R' U' R U R' F' R U R' U' R' F R) (R')(R F) (R U' R' U' R U R' F' R U R' U' R' F R) (F' R')"/>
+        <param name="script" value="(D2) (R U' R' U' R U R' F' R U R' U' R' F R) (D2)"/>
+      </applet>
+    </td>
+  </tr>
+
+
+    <tr valign="top">
+    <td align="left">
+      Finally red/green goes to <font color="#8080FF"><b>BL</b></font> using setup-alg (D' R). The cube is solved!    </td>
+    <td>
+      <applet code="ch.randelshofer.rubik.RubikPlayerApp.class" archive="/web/20071021024048oe_/http://www.stefan-pochmann.info/spocc/internals/rubikplayer.zip" width="176" height="163">
+        <param name="scriptType" value="Generator"/>
+        <param name="faces" value="1,0,2,4,3,5">
+        <param name="scriptLanguage" value="HarrisENG"/>
+        <param name="initScript" value="D2 R2 B2 L' R2 B2 R2 D' R2 F U B R2 D' B L' F' U2 F2 U' D2 R D' B U2(d2 L) (R U R' U' R' F R2 U' R' U' R U R' F') (L' d2)(R U R' U' R' F R2 U' R' U' R U R' F')(l') (L' U R U' L U2' R' U R U2 R') (l)(l2) (L' U R U' L U2' R' U R U2 R') (l2)(D2 L2) (R U R' U' R' F R2 U' R' U' R U R' F') (L2 D2)(L' U R U' L U2' R' U R U2 R')(d L') (R U R' U' R' F R2 U' R' U' R U R' F') (L d')(L U' R' U L' U2' R U' R' U2 R)(L2) (R U R' U' R' F R2 U' R' U' R U R' F') (L2)(L') (R U R' U' R' F R2 U' R' U' R U R' F') (L)(l) (L' U R U' L U2' R' U R U2 R') (l')(R U R' U' R' F R2 U' R' U' R U R' F')R2 U' R' U' R U R U R U' R(R D') (R U' R' U' R U R' F' R U R' U' R' F R) (D R')(R U' R' U' R U R' F' R U R' U' R' F R)(F R') (R U' R' U' R U R' F' R U R' U' R' F R) (R F')(F) (R U' R' U' R U R' F' R U R' U' R' F R) (F')(F') (R U' R' U' R U R' F' R U R' U' R' F R) (F)(R) (R U' R' U' R U R' F' R U R' U' R' F R) (R')(R F) (R U' R' U' R U R' F' R U R' U' R' F R) (F' R')(D2) (R U' R' U' R U R' F' R U R' U' R' F R) (D2)"/>
+        <param name="script" value="(D' R) (R U' R' U' R U R' F' R U R' U' R' F R) (R' D)"/>
+      </applet>
+    </td>
+  </tr>
+
+
+</table>
+</center>
+
+
+
+<!-- ============================================================ -->
+<!--      Setup Algorithms                                        -->
+<!-- ============================================================ -->
+
+<p><a name="SetupAlgorithms">&nbsp;</a></p>
+<p><font size="+2" color="#00FF00">Setup Algorithms</font></p>
+
+<p>The setup-algs are all pretty easy and intuitive, so I won't tell you all of them. You've seen some possibilities in the example solve above. Here are just some stats, namely the number of edge and corner targets reachable in some moves. You can see that on average, you need less than 1.5 setup-moves and the worst case (only one) is three moves. These numbers can of course be reduced further by adding more algorithms. For example shooting an edge to LU would result in an average of just 1.09 moves for edges!</p>
+
+<center>
+<table border="1" cellspacing="0" cellpadding="8">
+
+  <tr bgcolor="#333333">
+    <td>#Moves</td>
+    <td>#Edges</td>
+    <td>#Corners</td>
+  </tr>
+
+  <tr>
+    <td>0</td>
+    <td>3</td>
+    <td>1</td>
+  </tr>
+
+  <tr>
+    <td>1</td>
+    <td>9</td>
+    <td>9</td>
+  </tr>
+
+  <tr>
+    <td>2</td>
+    <td>9</td>
+    <td>11</td>
+  </tr>
+
+  <tr>
+    <td>3</td>
+    <td>1</td>
+    <td>0</td>
+  </tr>
+
+  <tr>
+    <td bgcolor="#333333">Total</td>
+    <td>22</td>
+    <td>21</td>
+  </tr>
+
+  <tr>
+    <td bgcolor="#333333">Average #moves</td>
+    <td>1.36</td>
+    <td>1.48</td>
+  </tr>
+
+</table>
+</center>
+
+
+
+<!-- ============================================================ -->
+<!--      Memorization                                            -->
+<!-- ============================================================ -->
+
+<p><a name="Memorization">&nbsp;</a></p>
+<p><font size="+2" color="#00FF00">Memorization</font></p>
+
+<p>Ok, you've seen the example, which demonstrated the analysis and the execution parts. Now let me tell you how I memorize. You might have noticed that I always wrote the target positions in a light blue color. Here they are again:</p>
+
+<p align="center"><font color="#8080FF"><b> FR  - UL  - FD  - DB  - DR  - UF  - LB  - UB  - DL  - FL  - BU  - stop   - UB  - RD  - UF  - UR  - DL  - RB  - FR  - LD  - BL </b></font></p>
+
+<p>Actually I don't work with positions, I work with colors. So what I really get when I blindsolve the 3x3 is the following sequence of color pairs. And no, I don't use the positions and translate them to color pairs like this here may look like. I directly use color pairs. And you can find this sequence just by looking at the cube, without solving it. The first "OB" (orange/blue) is obvious, since it's simply the cubie in the buffer position. And you can find the "YG" (yellow/green) simply by looking at the "OB" place (i.e. where "OB" belongs). And you can find the "OW" simply by looking at the "YG" place. And so on, simply walk along the cycles. Try to scramble the cube again (with the example scramble) and find the color pair sequence yourself just by looking at the cube.</p>
+
+
+<p align="center"><font color="#8080FF"><b> OB  - YG  - OW  - WR  - WB  - YO  - GR  - YR  - WG  - OG  - RY  - stop   - YR  - BW  - YO  - YB  - WG  - BR  - OB  - GW  - RG </b></font></p>
+
+<p>This sequence is all you need to memorize. Then after putting on the blindfold, all you need to do is do something easy for each item in the sequence. And memorizing that sequence is also very easy. What? You don't think it's that easy to memorize? That's only 20 items! For the 5x5, I had to memorize nearly 100! And there are people who memorize a random number with 2000 digits in one hour. Are we geniuses? No, not at all. Are people who can solve the 3x3 (*not* blindfolded) geniuses? No, not at all. What's the secret? Good systems.</p>
+
+<p>So what's a system to easily remember the above sequence? First of all, let me tell you that I don't memorize "YG". As soon as I see the cubie, I think of a banana. I don't even think "YG" at all. I just think "banana". Why? Because I see yellow as primary color and I see green as secondary color. A banana is mostly yellow but also a bit green. Instead of "WB" I think "Donald Duck" (white body, blue shirt). Instead of "RB" I think "Spiderman" (red top, blue pants). Instead of "YR" I think "french fries with ketchup" (obvious). These are all *pictures* I can easily envision. So that's the first step. Think of nice visual objects instead of color pairs. You only need to come up with 24 visual objects, one for each color pair. You can use my few examples, but I won't tell you the rest. It's much better for you if you invent them yourself. Many people use numbers or characters to represent the cubies. I think that's extremely artificial because these are very abstract things. I don't even use things like that as intermediate steps. I only see a cubie and immediately think "banana", because that's what the cubie simply looks like.</p>
+
+<p>Now how do I memorize a sequence of visual objects? For example, how could I memorize this sequence?</p>
+
+<p align="center"><font color="#8080FF"><b>Banana<br>Donald Duck<br>Spiderman<br>French fries with ketchup</b></font></p>
+
+<p>Method 1: Invent a story, for example... A banana lies on the table. It looks and smells very nice. Donald enters the room, notices the banana and wants to eat it. He's almost there, but Spiderman jumps superfast in front of him and steals the banana. Donald is angry and decides to get some french fries. He prefers junk food anyway... The important thing is to really really *experience* this story in your head. Imagine how very fresh the banana looks and smells like. Maybe you "see" the smell in the air, like in cartoons? Watch closely how happy Donald looks when he sees the banana and starts to run for it. And do you hear him screaming angry when Spiderman steals it? And do you see Spiderman's evil grin? You could add much more information. The more, the better (in terms of memorization safety, not speed, of course ;-). Use as many senses as possible. See it, hear it, smell it, feel it! Use extremes, e.g. the banana could be 2 meters long and Spiderman rides away on it. Makes it easier to memorize!!! Use sexual, illegal, brutal things! Whatever! Extreme things are easier to memorize!!! Blue/yellow is a beautiful stewardess for me and I really like to include her in my mental stories ;-)</p>
+
+<p>Method 2: Similar to method 1, but you use a mental "route" you've prepared beforehand. For the 5x5, I've built myself a mental home with ten rooms, each having ten "places" in it, so overall 100 places. The first "room" is in front of the house, starting with a tree, then a swing hanging down from it, then a motorcycle, then a car (Ferrari ;-), etc... When you memorize a sequence, you mentally "combine" the i-th item in the sequence with the i-th item in the prepared mental route. Envision similarly exciting (or disgusting ;-) things, like in method 1. Oh, how I like it when the stewardess accidently needs to be combined with the bed in my bedroom ;-). Imagine bananas growing on the tree, Donald swinging (and singing?) on the swing, Spiderman playing with the motorcycle, a big fat french fry couple driving away with your Ferrari. Later you just need to walk along that mental route. For the 3x3, a route with 30 places should be enough, usually you need 20-25. You can also try to combine the two methods, build a story along a mental route. The mental route has the advantage that it's hardly possible to forget an item.</p>
+
+<p>I also encode the end of each phase (for 3x3 just edges phase, corners phase) so that I know when to stop (and begin the next phase or take off the blindfold. Since there's nothing more to do, I thought of a black hole for this. But that's not a nice object. So instead I envision Stephen Hawkings in his wheelchair.</p>
+
+<p>One last trick: To make sure you didn't forget some cubies (very important in more complex puzzles, like 5x5 or Megaminx), count! The rule is:</p>
+
+<p align="center">#items = (#wrong cubies) + (#cycles) - 2</p>
+
+<p>In the example, the red/blue edge was correct, so we had 11 wrong edges. We had 2 edge cycles. So we should expect 11+2-2=11 items to memorize for the edges. That's indeed correct. No corners were correct, so we had 8 wrong corners. There were 3 cycles (one just for orienting the last two corners). So we should expect 8+3-2=9 items to memorize for corners. Again, that turned out to be correct.</p>
+
+<p>Btw, I completed my memo home 30 minutes before I started my first ever attempt to solve the 5x5 blindfolded (at the European Championships 2004). And I remembered most of the almost 100 items even three weeks later with only recalling it once in the meantime. In fact, I was worried I might never be able to forget it and that it might give me trouble in future attempts. I just mention this in order to emphasize how easy the memorization part really is. It's much harder to stay concentrated and not make an execution mistake! Memorization is *not* the problem!</p>
+
+
+
+<!-- ============================================================ -->
+<!--      Some last words...                                      -->
+<!-- ============================================================ -->
+
+<p><a name="SomeLastWords">&nbsp;</a></p>
+<p><font size="+2" color="#00FF00">Some Last Words...</font></p>
+
+<ul>
+
+  <li><p>When I invented this method my main objective for writing about it was to show it's possible to solve the cube (blindfolded) using only a single algorithm (that was before I added some, <a href="https://www.stefan-pochmann.info/spocc/blindsolving/3x3_single_alg">when I only used the T-permutation</a>). I had read on <a href="https://web.archive.org/web/20071021024048/http://homepage.ntlworld.com/family.hayden/cube/blindfold_frontpage.html">stiff_hands's page</a> that five algorithms are required, but one is enough as well. Actually of course you don't need to know any algorithms if you can invent what you need on the fly, e.g. with simple intuitive commutators doing 3-cycles (that's how I solved the <a href="https://www.stefan-pochmann.info/spocc/blindsolving/megaminx/">Megaminx blindfolded</a>).</p></li>
+
+  <li><p>My first approach (the <a href="https://web.archive.org/web/20071021024048/http://tomas.rokicki.com/cubecontest/stefan2.txt">528 bytes program</a>) for <a href="https://web.archive.org/web/20071021024048/http://tomas.rokicki.com/cubecontest/">Tom's CubeSolver Contest</a> uses basically the same idea, but it uses four main algorithms (orient/permute edges/corners). Btw, yes, that tiny program is capable of completely solving a scrambled cube!</p></li>
+
+  <li><p><a href="https://web.archive.org/web/20071021024048/mailto:pochmann@gmx.de?subject=3x3%20Blindsolving">Let me know what you think</a> about my method and this description page!</p></li>
+
+</ul>
+
+
+<p align="right">
+Last modified: June 27 2007, 05:01:43.<br>
+<a href="https://web.archive.org/web/20071021024048/mailto:pochmann@gmx.de">Stefan Pochmann</a>
+</p>
+
 </body>
 </html>
